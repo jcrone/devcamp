@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
 
   def index
+    @page_title = "My Portfolios"
     @portfolio_items = Portfolio.all
   end
 
