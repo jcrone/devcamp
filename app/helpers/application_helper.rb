@@ -4,7 +4,7 @@ module ApplicationHelper
    end
 
    def login_helper
-     if current_user.is_a?(User)
+     if !current_user.is_a?(GuestUser)
       link_to "Edit", edit_user_registration_path
        link_to "Logout", destroy_user_session_path, method: :delete
      else
@@ -23,6 +23,6 @@ module ApplicationHelper
 
   def copyright_generator
     JcViewTool::Renderer.copyright 'Jamie Crone', 'All rights reserved'
-  end 
+  end
 
 end
