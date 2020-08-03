@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/jcrone/jc_view_tool
+  revision: c075c920f143f8eb91ba3911ed473e19d9a448b7
+  specs:
+    jc_view_tool (0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -79,6 +85,7 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    coderay (1.1.3)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     devise (4.7.2)
@@ -119,7 +126,15 @@ GEM
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    petergate (2.0.1)
+      activerecord (> 4.0.0)
     popper_js (1.16.0)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
     public_suffix (4.0.5)
     puma (4.3.5)
       nio4r (~> 2.0)
@@ -224,7 +239,10 @@ DEPENDENCIES
   devise
   friendly_id (~> 5.3)
   jbuilder (~> 2.7)
+  jc_view_tool!
   jquery-rails
+  petergate (~> 2.0)
+  pry-byebug
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
   sass-rails (>= 6)
